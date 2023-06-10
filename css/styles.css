@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #16222A;
+  background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+  background: linear-gradient(to right, #3A6073, #16222A);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.calculator {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #0E0E0E;
+}
+
+#display {
+  color: white;
+  margin: 0 10px;
+  height: 80px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+#clear {
+  color:  white;
+  background-color: #3F51B5;
+}
+
+#equal{
+  height: 130px;
+
+}
+
+.btn-number{
+  background-color: #006977;
+  color: white;
+}
+
+.btn-operador {
+  background-color:  #CA9800;
+  color: white;
+}
+
+.btn-equal {
+  background-color:  #4CAF50;
+  color: white;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#icon {
+  position: relative;
+  color: #fff;
+  margin-left: -5px;
+}
+
+.theme-toggler::before{
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -z;
+}
+
+button{
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+/*light mode*/
+
+.light {
+  background-color: #F1F1F1;
+}
+
+.light #display{
+  color: #000;
+}
+
+.light #clear {
+  color:  white;
+  background-color: #EB3974;
+}
+
+.light #equal{
+  height: 130px;
+}
+
+.light .btn-number{
+  background-color: #00BCD4;
+  color: black;
+}
+
+.light .btn-operador {
+  background-color:  #C95DDC;
+  color: black;
+}
+
+.light .btn-equal {
+  background-color:  #8BC34A;
+  color: black;
+}
